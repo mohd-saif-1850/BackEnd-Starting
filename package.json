@@ -2,8 +2,12 @@
   "name": "just-trial",
   "version": "1.0.0",
   "description": "Starting Back-End!",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "format": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,12 +20,17 @@
   ],
   "author": "MS KING",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
   "bugs": {
     "url": "https://github.com/mohd-saif-1850/BackEnd-Starting/issues"
   },
   "homepage": "https://github.com/mohd-saif-1850/BackEnd-Starting#readme",
-  "devDependencies": {
-    "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0"
   }
 }

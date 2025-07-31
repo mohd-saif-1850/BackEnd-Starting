@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mohd-saif-1850/BackEnd-Starting#readme",
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
   }
 }

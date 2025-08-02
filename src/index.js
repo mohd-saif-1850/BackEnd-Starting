@@ -5,14 +5,25 @@ import mongoose from "mongoose";
 import {DB_NAME} from "./constants.js";
 import express from "express";
 import connectDB from "./db/db.js";
+import app from "./app.js"
 
 
-connectDB();
+connectDB()
+.then(()=> {
+    app.listen(process.env.PORT || 8000,() => {
+        console.log(`App listens on Port ${process.env.PORT}`);
+        
+    })
+})
+.catch((error) => {
+    console.log("MongoDB connection error!! ",error);
+    
+})
 
 
 
 
-
+// Method to coonect db in same file
 
 /*
 const app = express();
